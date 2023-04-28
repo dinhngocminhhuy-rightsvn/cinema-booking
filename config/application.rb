@@ -18,5 +18,7 @@ module CinemaBooking
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    # Add hosts
+    config.hosts << ".lvh.me" if Rails.env.development?
   end
 end
